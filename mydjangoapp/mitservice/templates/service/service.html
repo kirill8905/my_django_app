@@ -1,0 +1,24 @@
+{% extends 'main/index.html' %}
+
+{% block main_cont %}
+
+<div style="padding: 20px;">
+    <h1>Service</h1>
+
+        <div style="padding: 20px;">
+            {% for object in object %}
+            <div style="margin: 20px; width: 20%; word-wrap: break-word; display: inline-block;">
+                <a href="{{ object.object }}">{{ object }}</a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div style="padding: 20px;">
+            {% for system_type in system_type %}
+            <div style="margin: 20px; width: 20%; word-wrap: break-word; display: inline-block;">
+                <a href="{{ system_type.system_type }}">{{ system_type }}</a>
+            </div>
+            {% endfor %}
+        </div>
+
+{% endblock %}
