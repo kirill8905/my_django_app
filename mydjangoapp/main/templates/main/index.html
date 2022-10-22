@@ -14,13 +14,13 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="{% url 'service' %}">Main</a></li>
+                    <li><a href="{% url 'mitservice' %}">Main</a></li>
                     <li><a href="">Caregory</a></li>
                     <li><a href="">link3</a></li>
                 </ul>
             </nav>
 
-        <a href="{% url 'service' %}"><button class="green">Add</button></a>
+        <a href="{% url 'mitservice' %}"><button class="green">Add</button></a>
 	{% endblock %}
     </header>
 
@@ -28,13 +28,13 @@
 		<aside>
 		{% block sidebar_left %}
             <ul>
-                {% for object in object %}
+<!--                {% for object in object %}-->
                 <li>
-                    <a href="{{ object.object }}">
+<!--                    <a href="{{ object.object }}">
                         {{ object }}
-                    </a>
+                    </a>-->
                 </li>
-                {% endfor %}
+<!--                {% endfor %}-->
             </ul>
 		{% endblock %}
 		</aside>
@@ -72,13 +72,13 @@
 		<aside>
 		{% block sidebar_right %}
 		    <ul>
-                {% for system_type in system_type %}
+<!--                {% for system_type in system_type %}-->
                 <li>
-                    <a href="{{ system_type.system_type }}">
+<!--                    <a href="{{ system_type.system_type }}">
                         {{ system_type }}
-                    </a>
+                    </a>-->
                 </li>
-                {% endfor %}
+<!--                {% endfor %}-->
             </ul>
 	    {% endblock %}
         </aside>
